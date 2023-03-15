@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "CheckTestCase",
+		"type": "shell",
+		"command": "cd ${fileDirname} && oj t -c 'python3 main.py' -d ./tests/",
+		"presentation": {
+		  "reveal": "always",
+		  "focus": true,
+		  "panel": "shared"
+		}
+	  },
+	  {
+		"label": "SubmitCode",
+		"type": "shell",
+		"command": "cd ${fileDirname} && acc s ${fileBasename}",
+		"presentation": {
+		  "reveal": "always",
+		  "focus": true,
+		  "panel": "shared"
+		}
+	  }
+	]
+  }
